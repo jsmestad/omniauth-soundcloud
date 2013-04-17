@@ -18,7 +18,7 @@ module OmniAuth
         :param_name => 'access_token'
       }
 
-      uid { raw_info['id'] }
+      uid { raw_info['id'].to_s }
 
       info do
         prune!({
